@@ -499,11 +499,14 @@ public class StartMenu extends javax.swing.JFrame {
 
         if (newTrack.isSelected()) {
             try {
-                track = new TrackEditor(setWidth.getValue(), setHeight.getValue()).edit();
+                track = new TrackEditor(setWidth.getValue(),
+										setHeight.getValue())
+						.edit();
                 filenameF.setText("newtrack");
                 saveDia.setVisible(true);
             } catch (LWJGLException ex) {
-                Logger.getLogger(StartMenu.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(StartMenu.class.getName())
+						.log(Level.SEVERE, null, ex);
             }
         }
         else {//load track

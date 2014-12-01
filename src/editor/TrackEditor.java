@@ -34,9 +34,11 @@ public class TrackEditor extends CarrFrame {
     public FinTrack edit() throws LWJGLException {
         selectedSlot = 0;
 		try {
+			laps = 1;
 			run();
 		} catch (ReachGoalExc ex) {
-			Logger.getLogger(TrackEditor.class.getName()).log(Level.SEVERE, null, ex);
+			Logger.getLogger(
+					TrackEditor.class.getName()).log(Level.SEVERE, null, ex);
 		}
         // not sure whether there is something missing...don't think so
         FinTrack trackF = new FinTrack(track);//exception?
