@@ -1,0 +1,1 @@
+java -jar -Djava.library.path=native\windows CarRacing.jar
