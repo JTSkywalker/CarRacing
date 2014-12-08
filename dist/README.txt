@@ -1,0 +1,1 @@
+all files in the dist-destination should be kept together. start the game with the batch file. on a not-windows system you have to create a similar file or command
